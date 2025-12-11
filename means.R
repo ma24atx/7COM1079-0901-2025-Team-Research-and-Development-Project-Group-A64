@@ -46,7 +46,7 @@ ggplot(nobel_clean, aes(x = category, y = age_at_award, fill = category)) +
   ) +
   theme_minimal()
 
-# Summary statistics by category
+# Summary statistics by category of subject 
 summary_by_category <- nobel_clean %>%
   group_by(category) %>%
   summarise(
